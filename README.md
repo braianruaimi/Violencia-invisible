@@ -4,7 +4,7 @@ Landing page PWA orientada a conversión por WhatsApp para el servicio de consul
 
 Sitio publicado en GitHub Pages:
 
-https://braianruaimi.github.io/Violemcia-invisible-/
+https://braianruaimi.github.io/Violencia-invisible-/
 
 ## Descripción
 
