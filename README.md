@@ -4,7 +4,7 @@ Landing page PWA de una sola página orientada a conversión por WhatsApp para e
 
 Sitio publicado en GitHub Pages:
 
-https://braianruaimi.github.io/Violencia-invisible-/
+https://braianruaimi.github.io/Violencia-invisible/
 
 ## Resumen
 
