@@ -196,22 +196,58 @@
     .atajos-movil-inner {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 8px;
+      gap: 6px;
       padding: 0 0 14px;
     }
 
     .atajo-movil {
-      min-height: 42px;
-      padding: 11px 10px;
+      min-height: 36px;
+      padding: 8px 6px;
       border-radius: 999px;
       text-decoration: none;
       text-align: center;
-      font-size: 0.84rem;
+      font-size: 0.76rem;
       font-weight: 800;
+      line-height: 1.1;
       color: var(--texto);
       background: rgba(255, 255, 255, 0.82);
       border: 1px solid rgba(30, 41, 59, 0.08);
       box-shadow: 0 8px 18px rgba(17, 27, 45, 0.06);
+    }
+
+    .boton-instalar,
+    .atajo-app {
+      display: none;
+    }
+
+    .boton-instalar.visible {
+      display: inline-flex;
+    }
+
+    .atajo-app-wrap {
+      display: none;
+      padding: 0 0 14px;
+      justify-content: center;
+    }
+
+    .atajo-app.visible {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 8px 14px;
+      border: 1px solid rgba(30, 41, 59, 0.08);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--texto);
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: none;
+    }
+
+    .atajo-app-wrap.visible {
+      display: flex;
     }
 
     .boton {
@@ -515,6 +551,51 @@
     body.scroll-ligero .hero-scroll,
     body.scroll-ligero .hero::after {
       transition: none;
+    }
+
+    body.scroll-ligero .topbar {
+      background: rgba(251, 245, 238, 0.96);
+      backdrop-filter: none;
+      box-shadow: 0 6px 16px rgba(17, 27, 45, 0.05);
+      transition: none;
+    }
+
+    body.scroll-ligero .topbar.compact {
+      background: rgba(251, 245, 238, 0.98);
+      box-shadow: 0 8px 18px rgba(17, 27, 45, 0.06);
+    }
+
+    body.scroll-ligero .atajos-movil {
+      background: rgba(251, 245, 238, 0.98);
+      backdrop-filter: none;
+    }
+
+    body.scroll-ligero .atajo-movil,
+    body.scroll-ligero .hero-resumen > div,
+    body.scroll-ligero .panel-hero,
+    body.scroll-ligero .hero-scroll i {
+      backdrop-filter: none;
+      box-shadow: none;
+    }
+
+    body.scroll-ligero .hero {
+      background:
+        linear-gradient(180deg, rgba(7, 22, 34, 0.82), rgba(10, 26, 41, 0.68)),
+        url("vsg.png") center center / cover no-repeat,
+        linear-gradient(135deg, var(--fondo-profundo) 0%, #17243a 54%, #101828 100%);
+      transform: none;
+    }
+
+    body.scroll-ligero .hero::before,
+    body.scroll-ligero .hero::after {
+      display: none;
+    }
+
+    body.scroll-ligero .hero-copy,
+    body.scroll-ligero .panel-hero,
+    body.scroll-ligero .hero-scroll {
+      transform: none;
+      opacity: 1;
     }
 
     .scroll-reveal {
@@ -1487,6 +1568,18 @@
         padding-bottom: 104px;
       }
 
+      .topbar {
+        background: rgba(251, 245, 238, 0.96);
+        backdrop-filter: none;
+        box-shadow: 0 6px 16px rgba(17, 27, 45, 0.05);
+        transition: none;
+      }
+
+      .topbar.compact {
+        background: rgba(251, 245, 238, 0.98);
+        box-shadow: 0 8px 18px rgba(17, 27, 45, 0.06);
+      }
+
       section {
         padding: 72px 0;
       }
@@ -1510,8 +1603,17 @@
       .atajos-movil {
         display: block;
         border-top: 1px solid rgba(30, 41, 59, 0.06);
-        background: rgba(251, 245, 238, 0.9);
-        backdrop-filter: blur(18px);
+        background: rgba(251, 245, 238, 0.98);
+        backdrop-filter: none;
+      }
+
+      .atajo-movil {
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: none;
+      }
+
+      .boton-instalar {
+        display: none !important;
       }
 
       .topbar .boton-principal {
@@ -1526,6 +1628,36 @@
         padding-top: 34px;
         padding-bottom: 72px;
         min-height: calc(100svh - var(--desfase-header));
+        background:
+          linear-gradient(180deg, rgba(7, 22, 34, 0.82), rgba(10, 26, 41, 0.68)),
+          url("vsg.png") center center / cover no-repeat,
+          linear-gradient(135deg, var(--fondo-profundo) 0%, #17243a 54%, #101828 100%);
+        transform: none;
+      }
+
+      .hero::before,
+      .hero::after {
+        display: none;
+      }
+
+      .hero-copy,
+      .panel-hero,
+      .hero-scroll {
+        transform: none;
+        opacity: 1;
+        transition: none;
+      }
+
+      .hero-resumen > div,
+      .panel-hero,
+      .hero-scroll i {
+        backdrop-filter: none;
+        box-shadow: none;
+      }
+
+      .panel-hero {
+        background: rgba(255, 249, 241, 0.12);
+        border-color: rgba(237, 242, 249, 0.08);
       }
 
       .hero-etiquetas {
@@ -1623,7 +1755,14 @@
 
     @media (max-width: 420px) {
       .atajos-movil-inner {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 5px;
+      }
+
+      .atajo-movil {
+        min-height: 34px;
+        padding: 7px 4px;
+        font-size: 0.7rem;
       }
 
       .panel-grid {
@@ -1658,6 +1797,9 @@
         <a href="#servicios">Servicios</a>
         <a href="#experiencias">Testimonios</a>
       </nav>
+      <button class="boton boton-secundario boton-instalar" type="button" data-install-app hidden>
+        Instalar app
+      </button>
       <a class="boton boton-principal" href="https://wa.me/5492494284798" target="_blank" rel="noopener noreferrer" aria-label="Reservar consulta por WhatsApp" data-whatsapp-source="Header">
         Reservar consulta
       </a>
@@ -1667,6 +1809,9 @@
         <a class="atajo-movil" href="#sobre">Enfoque</a>
         <a class="atajo-movil" href="#servicios">Servicios</a>
         <a class="atajo-movil" href="#experiencias">Testimonios</a>
+      </div>
+      <div class="contenedor atajo-app-wrap" data-install-app-wrap hidden>
+        <button class="atajo-app" type="button" data-install-app hidden>Instalar app</button>
       </div>
     </div>
   </header>
@@ -2263,6 +2408,9 @@
       var elementosFondo = [document.querySelector("header"), document.querySelector("main"), document.querySelector("footer"), document.querySelector(".wsp-flotante"), document.querySelector(".ia-wrap"), abrirPanel];
       var baseWhatsApp = "https://wa.me/5492494284798?text=";
       var mensajeWhatsAppPredeterminado = "Hola vengo desde la web, quiero una entrevista !!";
+      var botonesInstalar = document.querySelectorAll("[data-install-app]");
+      var contenedoresInstalar = document.querySelectorAll("[data-install-app-wrap]");
+      var eventoInstalacionDiferido = null;
       var indiceTestimonio = 0;
       var temporizadorTestimonios;
       var disparadoresModal = new WeakMap();
@@ -2383,6 +2531,24 @@
 
       function construirUrlWhatsApp(mensaje) {
         return baseWhatsApp + encodeURIComponent(mensaje || mensajeWhatsAppPredeterminado);
+      }
+
+      function estaInstaladaComoApp() {
+        return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+      }
+
+      function actualizarBotonesInstalar() {
+        var mostrar = !!eventoInstalacionDiferido && !estaInstaladaComoApp();
+
+        botonesInstalar.forEach(function (boton) {
+          boton.hidden = !mostrar;
+          boton.classList.toggle("visible", mostrar);
+        });
+
+        contenedoresInstalar.forEach(function (contenedor) {
+          contenedor.hidden = !mostrar;
+          contenedor.classList.toggle("visible", mostrar);
+        });
       }
 
       function actualizarEstadoScroll() {
@@ -2605,6 +2771,31 @@
         });
       });
 
+      botonesInstalar.forEach(function (boton) {
+        boton.addEventListener("click", function () {
+          if (!eventoInstalacionDiferido) {
+            return;
+          }
+
+          eventoInstalacionDiferido.prompt();
+          eventoInstalacionDiferido.userChoice.finally(function () {
+            eventoInstalacionDiferido = null;
+            actualizarBotonesInstalar();
+          });
+        });
+      });
+
+      window.addEventListener("beforeinstallprompt", function (evento) {
+        evento.preventDefault();
+        eventoInstalacionDiferido = evento;
+        actualizarBotonesInstalar();
+      });
+
+      window.addEventListener("appinstalled", function () {
+        eventoInstalacionDiferido = null;
+        actualizarBotonesInstalar();
+      });
+
       if (hero && seccionSiguiente && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
         hero.addEventListener("wheel", function (evento) {
           var heroVisible = window.scrollY <= hero.offsetTop + 24;
@@ -2654,6 +2845,8 @@
           bajarDesdeHero();
         });
       }
+
+      actualizarBotonesInstalar();
 
       testimoniosIndicadores.forEach(function (boton, indice) {
         boton.addEventListener("click", function () {
