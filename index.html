@@ -13,24 +13,37 @@
   <meta property="og:description" content="Violencia sin género. Leyes claras. Pasos y voz para quienes no pueden gritar.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://braianruaimi.github.io/Violemcia-invisible-/">
-  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23f8fafc'/%3E%3Crect x='80' y='80' width='1040' height='470' rx='32' fill='%23e2e8f0'/%3E%3Ctext x='600' y='290' font-size='72' text-anchor='middle' fill='%230f172a' font-family='Segoe UI, Arial, sans-serif'%3EViolencia Invisible%3C/text%3E%3Ctext x='600' y='370' font-size='34' text-anchor='middle' fill='%23334155' font-family='Segoe UI, Arial, sans-serif'%3EConsultor%C3%ADa informativa%3C/text%3E%3C/svg%3E">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23f8fafc'/%3E%3Crect x='80' y='80' width='1040' height='470' rx='32' fill='%23e2e8f0'/%3E%3Ctext x='600' y='290' font-size='72' text-anchor='middle' fill='%230f172a' font-family='Segoe UI, Arial, sans-serif'%3EViolencia Invisible%3C/text%3E%3Ctext x='600' y='370' font-size='34' text-anchor='middle' fill='%23334155' font-family='Segoe UI, Arial, sans-serif'%3EConsultor%C3%Иa informativa%3C/text%3E%3C/svg%3E">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='32' fill='%230a66ff'/%3E%3Cpath d='M96 32l46 16v36c0 37-24 61-46 76-22-15-46-39-46-76V48l46-16z' fill='%23fff'/%3E%3Cpath d='M71 96h50' stroke='%230a66ff' stroke-width='8'/%3E%3Ccircle cx='96' cy='96' r='8' fill='%2300d0ff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKB4Imkb9hY6Y5z0O5l9O6F1z9F6Vb5p6Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Violencia Invisible | Consultoría informativa</title>
   <style>
     :root {
-      --fondo: #ffffff;
-      --texto: #081225;
-      --muted: #52627c;
-      --borde: #d9e3f0;
-      --seccion: #f4f8fc;
-      --acento: #0a66ff;
-      --acento-hover: #0050d2;
-      --acento-2: #00d0ff;
-      --radio: 18px;
-      --sombra: 0 14px 36px rgba(8, 18, 37, 0.10);
-      --contenedor: min(1080px, 92vw);
-      --desfase-header: 74px;
+      --fondo: #f4ede5;
+      --fondo-secundario: #fff8f1;
+      --fondo-profundo: #111b2d;
+      --fondo-profundo-2: #1a2740;
+      --panel: rgba(255, 252, 247, 0.94);
+      --panel-fuerte: #ffffff;
+      --texto: #1e2938;
+      --texto-secundario: #5d6779;
+      --texto-claro: #edf2f9;
+      --texto-claro-secundario: rgba(237, 242, 249, 0.76);
+      --borde: rgba(30, 41, 59, 0.12);
+      --borde-fuerte: rgba(30, 41, 59, 0.2);
+      --acento: #cf6c4a;
+      --acento-2: #f2a65a;
+      --acento-frio: #6fc7ff;
+      --exito: #3fbf8a;
+      --radio: 24px;
+      --sombra-lg: 0 26px 60px rgba(17, 27, 45, 0.14);
+      --sombra-md: 0 18px 34px rgba(17, 27, 45, 0.1);
+      --contenedor: min(1160px, calc(100vw - 32px));
+      --desfase-header: 82px;
     }
 
     * {
@@ -43,11 +56,41 @@
 
     body {
       margin: 0;
-      font-family: "Segoe UI", "Noto Sans", "Helvetica Neue", sans-serif;
-      background: var(--fondo);
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(207, 108, 74, 0.14), transparent 32%),
+        radial-gradient(circle at 85% 10%, rgba(111, 199, 255, 0.12), transparent 26%),
+        linear-gradient(180deg, #fbf5ee 0%, var(--fondo) 48%, #efe5da 100%);
       color: var(--texto);
-      line-height: 1.55;
+      line-height: 1.65;
       text-rendering: optimizeLegibility;
+      --hero-parallax: 0px;
+      --hero-content-shift: 0px;
+      --hero-content-opacity: 1;
+      --hero-panel-shift: 0px;
+      --hero-panel-opacity: 1;
+      --hero-overlay-opacity: 0.06;
+      --hero-scale: 1;
+    }
+
+    body.overlay-activo {
+      overflow: hidden;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 70;
+      height: 3px;
+      transform-origin: left center;
+      transform: scaleX(var(--scroll-progress, 0));
+      background: linear-gradient(90deg, var(--acento), var(--acento-2), var(--acento-frio));
+      box-shadow: 0 4px 18px rgba(111, 199, 255, 0.22);
+      pointer-events: none;
+    }
+
+    a {
+      color: inherit;
     }
 
     img,
@@ -65,324 +108,728 @@
       position: sticky;
       top: 0;
       z-index: 30;
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--borde);
-      box-shadow: 0 8px 24px rgba(8, 18, 37, 0.04);
+      background: rgba(251, 245, 238, 0.78);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(30, 41, 59, 0.08);
+      box-shadow: 0 10px 30px rgba(17, 27, 45, 0.06);
+      transition: background-color 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
     }
 
     .topbar-inner {
       min-height: var(--desfase-header);
-      display: flex;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
       align-items: center;
-      justify-content: space-between;
-      gap: 12px;
+      gap: 18px;
+      transition: min-height 220ms ease, gap 220ms ease;
+    }
+
+    .topbar.compact {
+      background: rgba(251, 245, 238, 0.92);
+      border-bottom-color: rgba(30, 41, 59, 0.12);
+      box-shadow: 0 16px 30px rgba(17, 27, 45, 0.08);
+    }
+
+    .topbar.compact .topbar-inner {
+      min-height: 66px;
+      gap: 14px;
+    }
+
+    .marca-bloque {
+      display: grid;
+      gap: 2px;
     }
 
     .marca {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(1.3rem, 2vw, 1.55rem);
       font-weight: 700;
-      letter-spacing: 0.2px;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+
+    .marca-sub {
+      color: var(--texto-secundario);
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .nav-superior {
+      display: none;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav-superior a {
+      padding: 10px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--texto-secundario);
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+    }
+
+    .nav-superior a:hover {
+      color: var(--texto);
+      background: rgba(255, 255, 255, 0.7);
+      transform: translateY(-1px);
     }
 
     .boton {
       border: 0;
       border-radius: 999px;
-      padding: 12px 18px;
-      font-weight: 700;
-      font-size: 0.95rem;
+      padding: 14px 20px;
+      font-weight: 800;
+      font-size: 0.96rem;
+      letter-spacing: -0.01em;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
       cursor: pointer;
-      transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+      transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease;
     }
 
     .boton:focus-visible {
-      outline: 3px solid color-mix(in srgb, var(--acento) 45%, white);
-      outline-offset: 2px;
+      outline: 3px solid rgba(111, 199, 255, 0.55);
+      outline-offset: 3px;
     }
 
     .boton-principal {
-      color: #fff;
+      color: #fff8f3;
       background: linear-gradient(135deg, var(--acento), var(--acento-2));
-      box-shadow: 0 12px 28px rgba(10, 102, 255, 0.26);
+      box-shadow: 0 16px 32px rgba(207, 108, 74, 0.28);
     }
 
     .boton-principal:hover {
-      background: linear-gradient(135deg, var(--acento-hover), #00b8ea);
-      transform: translateY(-1px);
+      transform: translateY(-2px);
+      box-shadow: 0 22px 40px rgba(207, 108, 74, 0.34);
     }
 
     .boton-secundario {
       color: var(--texto);
-      background: rgba(255, 255, 255, 0.96);
-      border: 1px solid var(--borde);
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: inset 0 0 0 1px rgba(30, 41, 59, 0.04);
     }
 
     .boton-secundario:hover {
-      transform: translateY(-1px);
-      box-shadow: var(--sombra);
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: var(--sombra-md);
     }
 
     section {
       scroll-margin-top: calc(var(--desfase-header) + 18px);
-      padding: 64px 0;
+      padding: 72px 0;
+      position: relative;
     }
 
     .hero {
-      position: relative;
-      padding-top: 52px;
+      min-height: calc(100vh - var(--desfase-header));
+      display: flex;
+      align-items: center;
+      padding-top: 56px;
+      padding-bottom: 86px;
       overflow: clip;
       background:
-        radial-gradient(circle at 86% 10%, rgba(10, 102, 255, 0.16), transparent 34%),
-        radial-gradient(circle at 12% 28%, rgba(0, 208, 255, 0.12), transparent 26%),
-        var(--fondo);
+        linear-gradient(180deg, rgba(7, 22, 34, 0.78), rgba(10, 26, 41, 0.6)),
+        radial-gradient(circle at 84% 18%, rgba(111, 199, 255, 0.16), transparent 18%),
+        radial-gradient(circle at 18% 18%, rgba(242, 166, 90, 0.15), transparent 22%),
+        url("vsg.png") center center / cover no-repeat,
+        linear-gradient(135deg, var(--fondo-profundo) 0%, #17243a 54%, #101828 100%);
+      color: var(--texto-claro);
+      border-bottom: 1px solid rgba(237, 242, 249, 0.08);
+      transform: scale(var(--hero-scale));
+      transform-origin: center top;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 56px 56px;
+      opacity: var(--hero-overlay-opacity);
+      mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.72), transparent 100%);
     }
 
     .hero::after {
       content: "";
       position: absolute;
-      inset: 0;
+      width: 520px;
+      height: 520px;
+      right: -140px;
+      top: -90px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle, rgba(111, 199, 255, 0.2) 0%, rgba(111, 199, 255, 0.04) 35%, transparent 70%);
+      filter: blur(8px);
       pointer-events: none;
-      opacity: 0.24;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900' viewBox='0 0 1200 900'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Ccircle cx='940' cy='180' r='210' fill='%2300d0ff' fill-opacity='.12'/%3E%3Ccircle cx='980' cy='240' r='120' fill='%230a66ff' fill-opacity='.10'/%3E%3Cpath d='M818 170c68-28 137-42 206-42 26 0 52 2 78 5v327c-43 15-86 23-129 23-116 0-225-58-295-157 25-72 73-127 140-156Z' fill='%23081625' fill-opacity='.04'/%3E%3Cpath d='M896 229l84-29 84 29v65c0 67-44 111-84 138-40-27-84-71-84-138v-65Z' fill='%230a66ff' fill-opacity='.13'/%3E%3Cpath d='M955 298h50' stroke='%230a66ff' stroke-opacity='.6' stroke-width='14' stroke-linecap='round'/%3E%3Ccircle cx='980' cy='298' r='11' fill='%2300d0ff' fill-opacity='.85'/%3E%3Cpath d='M830 535c57-21 118-31 181-31 59 0 118 10 174 28' stroke='%23081625' stroke-opacity='.09' stroke-width='18' stroke-linecap='round'/%3E%3Cpath d='M920 612c33 13 68 19 104 19 33 0 65-5 96-15' stroke='%230a66ff' stroke-opacity='.18' stroke-width='12' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: min(58vw, 760px);
+      transform: translateY(var(--hero-parallax));
     }
 
     .hero-grid {
       display: grid;
-      gap: 28px;
+      gap: 30px;
       position: relative;
       z-index: 1;
+      width: 100%;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      transform: translateY(var(--hero-content-shift));
+      opacity: var(--hero-content-opacity);
+      transition: transform 140ms linear, opacity 140ms linear;
+    }
+
+    .hero-etiquetas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .hero-etiquetas span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(237, 242, 249, 0.14);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--texto-claro-secundario);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .hero h1,
+    h2,
+    h3 {
+      font-family: "Fraunces", Georgia, serif;
+      letter-spacing: -0.03em;
     }
 
     .hero h1 {
       margin: 0;
-      font-size: clamp(2.1rem, 9vw, 3.6rem);
-      line-height: 1.02;
-      letter-spacing: -0.03em;
+      font-size: clamp(2.9rem, 9vw, 5.4rem);
+      line-height: 0.94;
+      max-width: 11ch;
     }
 
     .slogan {
-      margin: 10px 0 0;
-      color: var(--acento);
-      font-weight: 700;
-      font-size: 0.98rem;
+      margin: 18px 0 0;
+      color: var(--acento-2);
+      font-weight: 800;
+      font-size: clamp(1rem, 2.3vw, 1.22rem);
+      max-width: 34ch;
     }
 
     .intro {
-      margin: 18px 0 0;
-      color: var(--muted);
-      max-width: 62ch;
-      font-size: 1.05rem;
+      margin: 22px 0 0;
+      color: var(--texto-claro-secundario);
+      max-width: 60ch;
+      font-size: clamp(1rem, 2vw, 1.12rem);
     }
 
     .acciones {
-      margin-top: 26px;
+      margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
     }
 
-    .panel-hero {
-      background: #fff;
-      border: 1px solid var(--borde);
-      border-radius: var(--radio);
-      padding: 22px;
-      box-shadow: 0 18px 42px rgba(8, 18, 37, 0.08);
+    .hero-resumen {
+      margin-top: 26px;
       display: grid;
       gap: 14px;
+    }
+
+    .hero-resumen > div {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(237, 242, 249, 0.1);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-resumen strong,
+    .hero-resumen span {
+      display: block;
+    }
+
+    .hero-resumen strong {
+      margin-bottom: 4px;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+
+    .hero-resumen span {
+      color: var(--texto-claro-secundario);
+      font-size: 0.95rem;
+    }
+
+    .panel-hero {
       align-content: start;
+      padding: 28px;
+      border-radius: 30px;
+      background: linear-gradient(180deg, rgba(255, 249, 241, 0.16), rgba(255, 255, 255, 0.08));
+      border: 1px solid rgba(237, 242, 249, 0.12);
+      box-shadow: 0 22px 44px rgba(0, 0, 0, 0.16);
+      display: grid;
+      gap: 18px;
+      backdrop-filter: blur(16px);
+      transform: translateY(var(--hero-panel-shift));
+      opacity: var(--hero-panel-opacity);
+      transition: transform 140ms linear, opacity 140ms linear;
+    }
+
+    .panel-kicker {
+      margin: 0;
+      color: var(--acento-frio);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
     }
 
     .fila-ico {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: var(--texto);
-      font-weight: 600;
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      align-items: start;
+      gap: 14px;
+      color: var(--texto-claro);
+    }
+
+    .fila-ico strong,
+    .fila-ico span {
+      display: block;
+    }
+
+    .fila-ico strong {
+      font-size: 1rem;
+    }
+
+    .fila-ico span {
+      color: var(--texto-claro-secundario);
+      font-size: 0.93rem;
+      margin-top: 4px;
+    }
+
+    .panel-nota-hero {
+      padding-top: 2px;
+      color: var(--texto-claro-secundario);
+      font-size: 0.94rem;
+    }
+
+    .hero-scroll-wrap {
+      position: absolute;
+      left: 50%;
+      bottom: 22px;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    .hero-scroll {
+      display: inline-grid;
+      justify-items: center;
+      gap: 8px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: rgba(237, 242, 249, 0.86);
+      font: inherit;
+      cursor: pointer;
+      transition: transform 180ms ease, opacity 180ms ease;
+      opacity: calc(1 - (1 - var(--hero-content-opacity)) * 1.4);
+    }
+
+    .hero-scroll:hover {
+      transform: translateY(2px);
+      opacity: 1;
+    }
+
+    .hero-scroll span {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .hero-scroll i {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(8px);
+    }
+
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(34px) scale(0.985);
+      transition: opacity 700ms ease, transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: transform, opacity;
+    }
+
+    .scroll-reveal.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
     }
 
     .icono {
-      flex: 0 0 40px;
-      width: 40px;
-      height: 40px;
-      border-radius: 12px;
+      flex: 0 0 46px;
+      width: 46px;
+      height: 46px;
+      border-radius: 15px;
       display: grid;
       place-items: center;
-      background: color-mix(in srgb, var(--acento-2) 18%, white);
-      color: var(--acento);
+      background: linear-gradient(135deg, rgba(207, 108, 74, 0.22), rgba(242, 166, 90, 0.3));
+      color: #fff7ef;
+      font-size: 1.2rem;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
     }
 
     .fondo-gris {
-      background: var(--seccion);
-      border-top: 1px solid var(--borde);
-      border-bottom: 1px solid var(--borde);
+      background: linear-gradient(180deg, rgba(255, 248, 241, 0.86), rgba(255, 255, 255, 0.78));
+      border-top: 1px solid rgba(30, 41, 59, 0.08);
+      border-bottom: 1px solid rgba(30, 41, 59, 0.08);
     }
 
     h2 {
-      margin: 0 0 14px;
-      font-size: clamp(1.5rem, 6vw, 2.2rem);
-      letter-spacing: -0.02em;
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 0.98;
+      max-width: 14ch;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.42rem;
+      line-height: 1.08;
     }
 
     .texto-seccion {
-      color: var(--muted);
-      max-width: 74ch;
-    }
-
-    .franja-derechos {
-      margin-top: 24px;
-      display: grid;
-      gap: 14px;
-    }
-
-    .quienes-grid {
-      display: grid;
-      gap: 18px;
-      margin-top: 24px;
-    }
-
-    .quienes-texto,
-    .quienes-destacado {
-      background: #fff;
-      border: 1px solid var(--borde);
-      border-radius: var(--radio);
-      padding: 22px;
-      box-shadow: 0 14px 30px rgba(8, 18, 37, 0.06);
-    }
-
-    .quienes-texto p,
-    .quienes-destacado p {
       margin: 0;
-      color: var(--muted);
-    }
-
-    .quienes-texto p + p,
-    .quienes-destacado p + p {
-      margin-top: 14px;
-    }
-
-    .quienes-destacado {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 248, 252, 0.98));
-    }
-
-    .quienes-destacado strong {
-      display: block;
-      margin-bottom: 10px;
-      color: var(--texto);
-      font-size: 1rem;
-    }
-
-    .derecho-card {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 248, 252, 0.98));
-      border: 1px solid var(--borde);
-      border-radius: 16px;
-      padding: 18px;
-      box-shadow: 0 14px 30px rgba(8, 18, 37, 0.05);
-    }
-
-    .derecho-card strong {
-      display: block;
-      margin-bottom: 6px;
-      color: var(--texto);
-      font-size: 1rem;
-    }
-
-    .derecho-card p {
-      margin: 0;
-      color: var(--muted);
+      color: var(--texto-secundario);
+      max-width: 72ch;
+      font-size: 1.02rem;
     }
 
     .lista-check {
       list-style: none;
-      margin: 20px 0 0;
+      margin: 26px 0 0;
       padding: 0;
       display: grid;
-      gap: 10px;
+      gap: 12px;
     }
 
     .lista-check li {
       display: flex;
       align-items: start;
-      gap: 10px;
-      color: #1e293b;
+      gap: 12px;
+      color: var(--texto);
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.56);
+      border: 1px solid rgba(30, 41, 59, 0.08);
+      box-shadow: 0 10px 24px rgba(17, 27, 45, 0.04);
     }
 
     .lista-check li::before {
       content: "";
       width: 12px;
       height: 12px;
-      margin-top: 7px;
+      margin-top: 8px;
       border-radius: 99px;
-      background: var(--acento);
-      box-shadow: 0 0 0 5px color-mix(in srgb, var(--acento) 20%, white);
+      background: linear-gradient(135deg, var(--acento), var(--acento-2));
+      box-shadow: 0 0 0 6px rgba(207, 108, 74, 0.12);
       flex: 0 0 12px;
     }
 
-    .tarjetas-servicios {
-      margin-top: 24px;
-      display: grid;
-      gap: 16px;
-    }
-
-    .tarjeta {
-      background: #fff;
-      border: 1px solid var(--borde);
-      border-radius: var(--radio);
-      padding: 20px;
-      display: grid;
-      gap: 10px;
-      transition: transform 210ms ease, box-shadow 210ms ease, border-color 210ms ease;
-      will-change: transform;
-    }
-
-    .acciones-servicio {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 4px;
-    }
-
-    .tarjeta:hover {
-      transform: translateY(-4px);
-      border-color: color-mix(in srgb, var(--acento) 38%, var(--borde));
-      box-shadow: var(--sombra);
-    }
-
-    .etiqueta-precio {
-      display: inline-block;
-      width: fit-content;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: color-mix(in srgb, var(--acento-2) 18%, white);
-      color: var(--acento-hover);
-      font-weight: 700;
-      font-size: 0.93rem;
-    }
-
-    .pago {
-      margin: 2px 0 6px;
-      color: #334155;
-      font-size: 0.95rem;
-    }
-
+    .franja-derechos,
+    .quienes-grid,
+    .tarjetas-servicios,
     .grilla-confianza {
-      margin-top: 18px;
+      margin-top: 28px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .cultura-encabezado {
+      display: grid;
+      gap: 10px;
+      max-width: 78ch;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cultura-kicker {
+      margin: 0;
+      color: var(--acento);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .cultura-grid {
+      margin-top: 28px;
+      display: grid;
+      gap: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    #cultura-valores {
+      background:
+        linear-gradient(180deg, rgba(7, 22, 34, 0.82), rgba(11, 31, 48, 0.74)),
+        url("vsg.png") center center / cover no-repeat;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      overflow: clip;
+    }
+
+    #cultura-valores::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 85% 20%, rgba(121, 210, 255, 0.18), transparent 26%);
+      pointer-events: none;
+    }
+
+    #cultura-valores h2,
+    #cultura-valores h3,
+    #cultura-valores .texto-seccion,
+    #cultura-valores .cultura-kicker,
+    #cultura-valores .manifiesto-destacado p {
+      position: relative;
+      z-index: 1;
+    }
+
+    #cultura-valores h2,
+    #cultura-valores h3 {
+      color: var(--texto-claro);
+    }
+
+    #cultura-valores .texto-seccion {
+      color: rgba(237, 242, 249, 0.82);
+    }
+
+    #cultura-valores .cultura-kicker {
+      color: #f2c980;
+    }
+
+    .valor-card {
+      position: relative;
+      padding: 24px;
+      border-radius: 26px;
+      background: rgba(255, 252, 247, 0.13);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 18px 34px rgba(0, 0, 0, 0.16);
+      backdrop-filter: blur(8px);
       display: grid;
       gap: 14px;
     }
 
-    .panel-soporte {
-      background: #fff;
-      border: 1px solid var(--borde);
-      border-radius: var(--radio);
+    .valor-card.destacado {
+      background: linear-gradient(180deg, rgba(242, 201, 128, 0.18), rgba(255, 252, 247, 0.14));
+      border-color: rgba(242, 201, 128, 0.24);
+    }
+
+    .valor-icono {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(207, 108, 74, 0.16), rgba(242, 166, 90, 0.22));
+      color: var(--acento);
+      font-size: 1.35rem;
+      box-shadow: inset 0 0 0 1px rgba(207, 108, 74, 0.08);
+    }
+
+    .valor-card p,
+    .manifiesto-destacado p {
+      margin: 0;
+      color: rgba(237, 242, 249, 0.82);
+    }
+
+    .manifiesto-destacado {
+      margin-top: 22px;
+      padding: 26px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(12, 24, 38, 0.88) 0%, rgba(14, 32, 49, 0.84) 100%);
+      color: var(--texto-claro);
+      box-shadow: 0 18px 42px rgba(17, 27, 45, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      z-index: 1;
+      backdrop-filter: blur(10px);
+    }
+
+    .manifiesto-destacado blockquote {
+      margin: 0;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(1.16rem, 2.5vw, 1.5rem);
+      line-height: 1.45;
+      letter-spacing: -0.02em;
+    }
+
+    .manifiesto-destacado p {
+      margin-top: 12px;
+      color: var(--texto-claro-secundario);
+    }
+
+    .quienes-texto,
+    .quienes-destacado,
+    .derecho-card,
+    .tarjeta,
+    .panel-soporte,
+    .item-confianza,
+    .modal-contenido,
+    .panel-ceo-contenido,
+    .mini-tarjeta,
+    .lista-analytics li {
+      background: var(--panel);
+      border: 1px solid rgba(30, 41, 59, 0.08);
+      box-shadow: var(--sombra-md);
+    }
+
+    .quienes-texto,
+    .quienes-destacado {
+      border-radius: 28px;
+      padding: 28px;
+    }
+
+    .quienes-texto p,
+    .quienes-destacado p,
+    .derecho-card p {
+      margin: 0;
+      color: var(--texto-secundario);
+    }
+
+    .quienes-texto p + p,
+    .quienes-destacado p + p {
+      margin-top: 16px;
+    }
+
+    .quienes-destacado {
+      background: linear-gradient(180deg, rgba(255, 248, 240, 0.98), rgba(251, 242, 235, 0.9));
+      border-color: rgba(207, 108, 74, 0.16);
+    }
+
+    .quienes-destacado strong,
+    .derecho-card strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.04rem;
+      color: var(--texto);
+    }
+
+    .derecho-card {
       padding: 22px;
-      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+      border-radius: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .derecho-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -20px -30px auto;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(207, 108, 74, 0.12), transparent 70%);
+      pointer-events: none;
+    }
+
+    .tarjeta {
+      border-radius: 28px;
+      padding: 24px;
+      display: grid;
+      gap: 12px;
+      transition: transform 210ms ease, box-shadow 210ms ease, border-color 210ms ease;
+      will-change: transform;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-6px);
+      border-color: rgba(207, 108, 74, 0.28);
+      box-shadow: var(--sombra-lg);
+    }
+
+    .tarjeta-destacada {
+      background: linear-gradient(180deg, rgba(255, 247, 239, 0.98), rgba(255, 252, 247, 0.94));
+      border-color: rgba(207, 108, 74, 0.24);
+      transform: translateY(-4px);
+    }
+
+    .etiqueta-plan,
+    .etiqueta-precio {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.86rem;
+      letter-spacing: 0.02em;
+    }
+
+    .etiqueta-plan {
+      background: rgba(17, 27, 45, 0.08);
+      color: var(--texto);
+    }
+
+    .etiqueta-precio {
+      background: rgba(207, 108, 74, 0.12);
+      color: #aa5335;
+    }
+
+    .pago,
+    .faq-discreto,
+    .panel-nota,
+    .ayuda-campo,
+    .social-nota,
+    .lista-analytics span,
+    .cliente-datos span {
+      color: var(--texto-secundario);
+    }
+
+    .acciones-servicio,
+    .panel-acciones,
+    .sociales {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .item-confianza {
+      padding: 18px;
+      border-radius: 22px;
+      gap: 14px;
+      align-items: start;
+      display: flex;
+    }
+
+    .item-confianza .icono {
+      flex-shrink: 0;
+    }
+
+    .panel-soporte {
+      padding: 28px;
+      border-radius: 30px;
       display: grid;
       gap: 16px;
     }
@@ -393,114 +840,111 @@
       margin: 0;
     }
 
-    .faq-lista {
+    .faq-lista,
+    .reserva-formulario,
+    .campos-grid,
+    .lista-analytics {
       display: grid;
-      gap: 10px;
+      gap: 12px;
     }
 
     .faq-boton {
       width: 100%;
       justify-content: flex-start;
       text-align: left;
-      border-radius: 14px;
-      padding: 14px 16px;
-      border: 1px solid var(--borde);
-      background: var(--seccion);
+      border-radius: 18px;
+      padding: 16px 18px;
+      border: 1px solid rgba(30, 41, 59, 0.09);
+      background: rgba(255, 248, 241, 0.76);
       color: var(--texto);
       font: inherit;
-      font-weight: 600;
+      font-weight: 700;
       cursor: pointer;
       transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
     }
 
     .faq-boton:hover {
-      transform: translateY(-1px);
-      border-color: color-mix(in srgb, var(--acento) 28%, var(--borde));
-      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+      transform: translateY(-2px);
+      border-color: rgba(207, 108, 74, 0.22);
+      box-shadow: 0 14px 24px rgba(17, 27, 45, 0.08);
     }
 
     .chat-ventana {
-      border: 1px solid var(--borde);
-      border-radius: 16px;
+      min-height: 230px;
       padding: 16px;
-      background: linear-gradient(180deg, #ffffff, var(--seccion));
+      border: 1px solid rgba(30, 41, 59, 0.1);
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(255, 252, 248, 0.98), rgba(248, 241, 233, 0.96));
       display: grid;
       gap: 12px;
-      min-height: 230px;
     }
 
     .burbuja {
       max-width: 90%;
-      border-radius: 16px;
+      border-radius: 18px;
       padding: 12px 14px;
       font-size: 0.96rem;
+      box-shadow: 0 8px 16px rgba(17, 27, 45, 0.06);
     }
 
     .burbuja.usuario {
       margin-left: auto;
-      background: color-mix(in srgb, var(--acento) 14%, white);
+      background: linear-gradient(135deg, rgba(207, 108, 74, 0.15), rgba(242, 166, 90, 0.18));
       color: var(--texto);
     }
 
     .burbuja.ia {
       background: #ffffff;
-      border: 1px solid var(--borde);
-      color: #1e293b;
+      border: 1px solid rgba(30, 41, 59, 0.08);
+      color: var(--texto);
     }
 
-    .reserva-formulario {
+    .campo {
       display: grid;
-      gap: 14px;
+      gap: 8px;
     }
 
-    .campos-grid {
-      display: grid;
-      gap: 12px;
+    .campo label {
+      font-weight: 800;
+      font-size: 0.94rem;
+      color: var(--texto);
     }
 
+    .campo input,
     .campo textarea,
     .campo select {
       width: 100%;
-      border: 1px solid var(--borde);
-      border-radius: 12px;
-      padding: 12px 14px;
+      border: 1px solid rgba(30, 41, 59, 0.14);
+      border-radius: 16px;
+      padding: 13px 14px;
       font: inherit;
       color: var(--texto);
-      background: #fff;
+      background: rgba(255, 255, 255, 0.92);
       resize: vertical;
+      transition: border-color 180ms ease, box-shadow 180ms ease;
     }
 
-    .ayuda-campo {
-      color: var(--muted);
-      font-size: 0.88rem;
+    .campo input:focus,
+    .campo textarea:focus,
+    .campo select:focus {
+      outline: none;
+      border-color: rgba(207, 108, 74, 0.45);
+      box-shadow: 0 0 0 4px rgba(207, 108, 74, 0.12);
     }
 
-    .mensaje-formulario {
+    .mensaje-formulario,
+    .mensaje-panel {
       min-height: 1.3em;
-      color: #b91c1c;
+      color: #b42318;
       font-size: 0.92rem;
-    }
-
-    .faq-discreto {
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .item-confianza {
-      background: #fff;
-      border: 1px solid var(--borde);
-      border-radius: 14px;
-      padding: 16px;
-      display: flex;
-      gap: 12px;
-      align-items: start;
+      margin: 0;
     }
 
     .testimonios-carrusel {
-      margin-top: 20px;
+      margin-top: 24px;
       position: relative;
       overflow: hidden;
-      border-radius: 20px;
+      border-radius: 28px;
     }
 
     .testimonios-track {
@@ -511,24 +955,34 @@
 
     .testimonio-card {
       min-width: 100%;
-      padding: 6px;
+      padding: 8px;
     }
 
     .testimonio-interno {
       height: 100%;
-      border: 1px solid var(--borde);
-      border-radius: 18px;
-      background: linear-gradient(180deg, #ffffff, #f8fbff);
-      box-shadow: 0 12px 28px rgba(8, 18, 37, 0.06);
-      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at top right, rgba(111, 199, 255, 0.12), transparent 28%),
+        linear-gradient(135deg, #182437 0%, #121b2d 100%);
+      box-shadow: 0 18px 42px rgba(17, 27, 45, 0.22);
+      padding: 28px;
       display: grid;
-      gap: 16px;
+      gap: 18px;
+      transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .testimonio-interno:hover {
+      box-shadow: 0 26px 48px rgba(17, 27, 45, 0.26);
+      border-color: rgba(242, 166, 90, 0.28);
     }
 
     .testimonio-interno p {
       margin: 0;
-      color: #1e293b;
-      font-size: 1.04rem;
+      color: var(--texto-claro);
+      font-size: clamp(1.08rem, 2.1vw, 1.3rem);
+      font-weight: 500;
+      line-height: 1.6;
     }
 
     .testimonio-cliente {
@@ -538,17 +992,17 @@
     }
 
     .avatar-cliente {
-      width: 48px;
-      height: 48px;
+      width: 50px;
+      height: 50px;
       border-radius: 999px;
       display: grid;
       place-items: center;
       color: #fff;
       font-weight: 800;
       letter-spacing: 0.04em;
-      background: linear-gradient(135deg, var(--acento-hover), var(--acento-2));
-      box-shadow: 0 10px 20px rgba(10, 102, 255, 0.22);
-      flex: 0 0 48px;
+      background: linear-gradient(135deg, var(--acento), var(--acento-2));
+      box-shadow: 0 12px 22px rgba(207, 108, 74, 0.24);
+      flex: 0 0 50px;
     }
 
     .cliente-datos strong,
@@ -557,19 +1011,14 @@
     }
 
     .cliente-datos strong {
-      color: var(--texto);
-    }
-
-    .cliente-datos span {
-      color: var(--muted);
-      font-size: 0.9rem;
+      color: #ffffff;
     }
 
     .testimonios-indicadores {
-      margin-top: 14px;
+      margin-top: 16px;
       display: flex;
       justify-content: center;
-      gap: 8px;
+      gap: 10px;
     }
 
     .testimonios-indicadores button {
@@ -578,45 +1027,94 @@
       padding: 0;
       border: 0;
       border-radius: 999px;
-      background: #c6d4e8;
+      background: rgba(30, 41, 59, 0.18);
       cursor: pointer;
-      transition: transform 180ms ease, background-color 180ms ease;
+      transition: transform 180ms ease, background-color 180ms ease, width 180ms ease;
     }
 
     .testimonios-indicadores button.activo {
       background: var(--acento);
-      transform: scale(1.18);
+      transform: scale(1.12);
+      width: 26px;
     }
 
     .cta-final {
       text-align: center;
+      color: var(--texto-claro);
       background:
-        linear-gradient(170deg, color-mix(in srgb, var(--acento-2) 10%, white), #ffffff 42%),
-        #fff;
-      border-top: 1px solid var(--borde);
+        radial-gradient(circle at 50% 0%, rgba(242, 166, 90, 0.16), transparent 24%),
+        linear-gradient(135deg, #182437 0%, #121b2d 100%);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .cta-final h2 {
+      max-width: 14ch;
+      margin-inline: auto;
     }
 
     .cta-final p {
-      color: #334155;
-      margin: 0 auto 20px;
+      color: var(--texto-claro-secundario);
+      margin: 0 auto 22px;
       max-width: 60ch;
-      font-size: 1.07rem;
+      font-size: 1.06rem;
     }
 
     footer {
-      padding: 30px 0 50px;
-      border-top: 1px solid var(--borde);
-      color: #334155;
-      font-size: 0.95rem;
+      padding: 34px 0 50px;
+      border-top: 1px solid rgba(30, 41, 59, 0.08);
+      color: var(--texto-secundario);
+      font-size: 0.96rem;
       text-align: center;
     }
 
-    .sociales {
+    .footer-inner {
+      padding: 28px;
+      border-radius: 30px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 248, 241, 0.92));
+      border: 1px solid rgba(30, 41, 59, 0.08);
+      box-shadow: 0 18px 36px rgba(17, 27, 45, 0.06);
+    }
+
+    .footer-marca {
+      display: inline-grid;
+      gap: 4px;
+    }
+
+    .footer-marca strong {
+      color: var(--texto);
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.45rem;
+      letter-spacing: -0.03em;
+    }
+
+    .footer-copy {
+      margin: 10px auto 0;
+      max-width: 54ch;
+    }
+
+    .footer-contacto {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       margin-top: 18px;
-      display: flex;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(207, 108, 74, 0.08);
+      border: 1px solid rgba(207, 108, 74, 0.14);
+      color: var(--texto);
+      font-weight: 700;
+    }
+
+    .footer-nota {
+      margin: 18px auto 0;
+      max-width: 52ch;
+      font-size: 0.88rem;
+      color: var(--texto-secundario);
+    }
+
+    .sociales {
+      margin-top: 20px;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
     }
 
     .social-link,
@@ -624,23 +1122,22 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 10px 14px;
+      padding: 11px 15px;
       border-radius: 999px;
-      border: 1px solid var(--borde);
-      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(30, 41, 59, 0.08);
+      background: rgba(255, 255, 255, 0.76);
       color: var(--texto);
       text-decoration: none;
-      box-shadow: 0 10px 24px rgba(8, 18, 37, 0.05);
+      box-shadow: 0 10px 24px rgba(17, 27, 45, 0.05);
     }
 
     .social-link:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 28px rgba(8, 18, 37, 0.08);
+      transform: translateY(-2px);
+      box-shadow: 0 16px 28px rgba(17, 27, 45, 0.08);
     }
 
     .social-pendiente {
-      color: var(--muted);
-      opacity: 0.88;
+      opacity: 0.86;
     }
 
     .social-ico {
@@ -651,53 +1148,55 @@
     }
 
     .social-etiqueta {
-      font-weight: 700;
+      font-weight: 800;
     }
 
-    .social-nota {
-      display: block;
-      margin-top: 2px;
-      font-size: 0.78rem;
-      color: var(--muted);
+    .wsp-flotante,
+    .ia-flotante {
+      position: fixed;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+      backdrop-filter: blur(16px);
+    }
+
+    .wsp-flotante:focus-visible,
+    .boton-panel:focus-visible {
+      outline: 3px solid rgba(111, 199, 255, 0.55);
+      outline-offset: 3px;
+    }
+
+    .ia-flotante:focus-visible {
+      outline: 3px solid rgba(111, 199, 255, 0.55);
+      outline-offset: 3px;
     }
 
     .wsp-flotante {
-      position: fixed;
-      right: 16px;
-      bottom: 16px;
+      right: max(20px, calc((100vw - var(--contenedor)) / 2 - 48px));
+      bottom: 20px;
       z-index: 40;
-      background: linear-gradient(135deg, var(--acento-hover), var(--acento-2));
-      height: 58px;
-      border-radius: 999px;
-      border: 0;
-      box-shadow: 0 14px 30px rgba(10, 102, 255, 0.25);
-      color: #fff;
-      display: grid;
-      place-items: center;
-      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.34);
-      transition: transform 160ms ease;
+      padding: 0 18px;
+      min-height: 60px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      background: linear-gradient(135deg, #21c063, #5be88f);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 18px 34px rgba(33, 192, 99, 0.28);
+      font-weight: 800;
     }
 
-    .wsp-flotante:hover {
-      transform: scale(1.06);
-    }
-
-    .wsp-flotante span {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
+    .wsp-flotante:hover,
+    .ia-flotante:hover {
+      transform: translateY(-2px);
     }
 
     .ia-wrap {
       position: fixed;
-      left: 14px;
-      bottom: 16px;
+      left: max(20px, calc((100vw - var(--contenedor)) / 2 - 132px));
+      bottom: 20px;
       z-index: 42;
       display: flex;
       align-items: end;
@@ -706,128 +1205,126 @@
 
     .ia-pista {
       max-width: 150px;
-      padding: 9px 12px;
-      border-radius: 14px;
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(15, 23, 42, 0.08);
-      color: rgba(15, 23, 42, 0.72);
-      backdrop-filter: blur(10px);
+      padding: 10px 12px;
+      border-radius: 16px;
+      background: rgba(17, 27, 45, 0.82);
+      color: var(--texto-claro);
       font-size: 0.82rem;
-      line-height: 1.25;
-      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.10);
+      line-height: 1.3;
+      box-shadow: 0 16px 24px rgba(17, 27, 45, 0.18);
+    }
+
+    .ia-pista strong,
+    .ia-pista span {
+      display: block;
+    }
+
+    .ia-pista strong {
+      font-size: 0.84rem;
+      color: #ffffff;
+    }
+
+    .ia-pista span {
+      margin-top: 3px;
     }
 
     .ia-flotante {
+      position: static;
       width: 58px;
       height: 58px;
-      border-radius: 999px;
-      border: 0;
-      background: var(--texto);
-      color: #fff;
-      font-weight: 800;
-      letter-spacing: 0.06em;
-      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.24);
+      padding: 0;
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      background: linear-gradient(135deg, #ffffff, #f5ede5);
+      color: var(--fondo-profundo);
+      box-shadow: 0 18px 34px rgba(17, 27, 45, 0.16);
     }
 
-    .ia-flotante:hover {
-      transform: scale(1.04);
+    .footer-nota-wrap {
+      margin: 18px auto 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 56ch;
     }
 
     .boton-panel {
-      position: fixed;
-      left: 10px;
-      bottom: 86px;
-      z-index: 35;
-      padding: 10px 12px;
+      flex: 0 0 auto;
+      width: 14px;
+      height: 14px;
+      padding: 0;
+      border: 0;
       border-radius: 999px;
-      border: 1px solid rgba(15, 23, 42, 0.08);
-      background: rgba(255, 255, 255, 0.08);
-      color: rgba(15, 23, 42, 0.18);
-      backdrop-filter: blur(6px);
-      font-size: 0.78rem;
-      letter-spacing: 0.02em;
-      box-shadow: none;
+      background: rgba(30, 41, 59, 0.2);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+      opacity: 0.62;
+      cursor: pointer;
+      transition: opacity 160ms ease, transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
     }
 
-    .boton-panel:hover,
-    .boton-panel:focus-visible {
-      color: rgba(15, 23, 42, 0.55);
-      border-color: rgba(15, 23, 42, 0.14);
-      background: rgba(255, 255, 255, 0.5);
+    .boton-panel:hover {
+      opacity: 0.9;
+      transform: scale(1.15);
     }
 
-    .modal-flotante {
+    .boton-panel[aria-expanded="true"] {
+      background: rgba(207, 108, 74, 0.42);
+      opacity: 0.95;
+      box-shadow: 0 0 0 5px rgba(207, 108, 74, 0.12);
+    }
+
+    .modal-flotante,
+    .panel-ceo {
       position: fixed;
       inset: 0;
       z-index: 58;
       display: none;
-      align-items: center;
-      justify-content: center;
       padding: 18px;
-      background: rgba(15, 23, 42, 0.44);
+      background: rgba(17, 27, 45, 0.52);
+      backdrop-filter: blur(8px);
     }
 
-    .modal-flotante.visible {
+    .modal-flotante {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .panel-ceo {
+      z-index: 60;
+      align-items: end;
+      justify-content: start;
+    }
+
+    .modal-flotante.visible,
+    .panel-ceo.visible {
       display: flex;
+    }
+
+    .modal-contenido,
+    .panel-ceo-contenido {
+      border-radius: 28px;
+      padding: 24px;
+      display: grid;
+      gap: 16px;
+      color: var(--texto);
     }
 
     .modal-contenido {
       width: min(640px, 100%);
       max-height: min(88vh, 820px);
       overflow: auto;
-      background: #fff;
-      border: 1px solid var(--borde);
-      border-radius: 22px;
-      box-shadow: 0 22px 56px rgba(15, 23, 42, 0.22);
-      padding: 22px;
-      display: grid;
-      gap: 16px;
-    }
-
-    .modal-encabezado {
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
-      gap: 14px;
-    }
-
-    .modal-encabezado h3,
-    .modal-encabezado p {
-      margin: 0;
     }
 
     .modal-chat {
-      width: min(460px, 100%);
-    }
-
-    .panel-ceo {
-      position: fixed;
-      inset: 0;
-      z-index: 60;
-      display: none;
-      padding: 18px;
-      background: rgba(15, 23, 42, 0.48);
-      align-items: end;
-      justify-content: start;
-    }
-
-    .panel-ceo.visible {
-      display: flex;
+      width: min(480px, 100%);
     }
 
     .panel-ceo-contenido {
-      width: min(420px, 100%);
+      width: min(440px, 100%);
       max-height: min(82vh, 720px);
       overflow: auto;
-      background: #ffffff;
-      border: 1px solid var(--borde);
-      border-radius: 20px;
-      box-shadow: 0 20px 48px rgba(15, 23, 42, 0.22);
-      padding: 22px;
-      display: grid;
-      gap: 16px;
     }
 
+    .modal-encabezado,
     .panel-ceo-encabezado {
       display: flex;
       align-items: start;
@@ -835,45 +1332,23 @@
       gap: 14px;
     }
 
+    .modal-encabezado h3,
+    .modal-encabezado p,
     .panel-ceo-encabezado h3,
     .panel-ceo-encabezado p {
       margin: 0;
     }
 
     .cerrar-panel {
-      border: 1px solid var(--borde);
-      background: #fff;
+      border: 1px solid rgba(30, 41, 59, 0.12);
+      background: rgba(255, 255, 255, 0.86);
       color: var(--texto);
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 999px;
       cursor: pointer;
       font-size: 1.1rem;
-    }
-
-    .campo {
-      display: grid;
-      gap: 8px;
-    }
-
-    .campo label {
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-
-    .campo input {
-      width: 100%;
-      border: 1px solid var(--borde);
-      border-radius: 12px;
-      padding: 12px 14px;
-      font: inherit;
-      color: var(--texto);
-    }
-
-    .mensaje-panel {
-      min-height: 1.3em;
-      color: #b91c1c;
-      font-size: 0.92rem;
+      box-shadow: 0 10px 18px rgba(17, 27, 45, 0.08);
     }
 
     .panel-grid {
@@ -883,9 +1358,7 @@
     }
 
     .mini-tarjeta {
-      border: 1px solid var(--borde);
-      border-radius: 14px;
-      background: var(--seccion);
+      border-radius: 18px;
       padding: 14px;
     }
 
@@ -899,8 +1372,6 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      display: grid;
-      gap: 10px;
     }
 
     .lista-analytics li {
@@ -909,36 +1380,13 @@
       justify-content: space-between;
       gap: 12px;
       padding: 12px 14px;
-      border: 1px solid var(--borde);
-      border-radius: 12px;
-      background: #fff;
-    }
-
-    .lista-analytics span {
-      color: var(--muted);
-      font-size: 0.93rem;
-    }
-
-    .panel-acciones {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .panel-nota {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.9rem;
+      border-radius: 16px;
     }
 
     .entrada {
-      opacity: 0;
-      transform: translateY(18px);
-      animation: subir 700ms ease forwards;
+      opacity: 1;
+      transform: none;
     }
-
-    .entrada.delay-1 { animation-delay: 90ms; }
-    .entrada.delay-2 { animation-delay: 170ms; }
 
     @keyframes subir {
       to {
@@ -949,15 +1397,27 @@
 
     @media (min-width: 760px) {
       section {
-        padding: 86px 0;
+        padding: 92px 0;
+      }
+
+      .nav-superior {
+        display: flex;
       }
 
       .hero-grid {
-        grid-template-columns: 1.25fr 0.9fr;
+        grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
         align-items: center;
       }
 
+      .hero-resumen {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .tarjetas-servicios {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .cultura-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
@@ -974,20 +1434,138 @@
       }
 
       .quienes-grid {
-        grid-template-columns: 1.15fr 0.85fr;
+        grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
         align-items: start;
       }
     }
 
+    @media (max-width: 759px) {
+      body {
+        padding-bottom: 104px;
+      }
+
+      section {
+        padding: 72px 0;
+      }
+
+      .topbar-inner {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 14px 0;
+      }
+
+      .marca-bloque {
+        gap: 4px;
+      }
+
+      .marca-sub {
+        font-size: 0.7rem;
+      }
+
+      .topbar .boton-principal {
+        width: 100%;
+      }
+
+      .hero h1 {
+        max-width: none;
+      }
+
+      .hero {
+        padding-top: 34px;
+        padding-bottom: 72px;
+        min-height: calc(100svh - var(--desfase-header));
+      }
+
+      .hero-etiquetas {
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      .hero-etiquetas span {
+        font-size: 0.74rem;
+        padding: 7px 10px;
+      }
+
+      .slogan {
+        max-width: 22ch;
+      }
+
+      .intro {
+        margin-top: 18px;
+      }
+
+      .acciones {
+        gap: 10px;
+      }
+
+      .acciones .boton,
+      .acciones-servicio .boton {
+        width: 100%;
+      }
+
+      .hero-resumen > div,
+      .panel-hero,
+      .quienes-texto,
+      .quienes-destacado,
+      .derecho-card,
+      .tarjeta,
+      .panel-soporte,
+      .testimonio-interno,
+      .modal-contenido,
+      .panel-ceo-contenido {
+        padding: 22px;
+      }
+
+      h2 {
+        max-width: none;
+      }
+
+      .wsp-flotante,
+      .ia-wrap {
+        bottom: 16px;
+      }
+
+      .wsp-flotante {
+        right: 20px;
+        padding-inline: 16px;
+      }
+
+      .ia-wrap {
+        left: 20px;
+      }
+
+      .footer-inner {
+        padding: 22px;
+      }
+
+      .hero-scroll-wrap {
+        bottom: 12px;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .entrada,
+      html {
+        scroll-behavior: auto;
+      }
+
+      .scroll-progress,
       .tarjeta,
       .boton,
       .wsp-flotante,
-      .ia-flotante {
+      .ia-flotante,
+      .boton-panel,
+      .faq-boton,
+      .testimonios-track,
+      .hero-copy,
+      .panel-hero,
+      .scroll-reveal {
         animation: none !important;
         transition: none !important;
+      }
+
+      .scroll-reveal {
+        opacity: 1 !important;
+        transform: none !important;
       }
     }
 
@@ -1001,22 +1579,29 @@
         font-size: 0.76rem;
       }
 
-      .boton-panel {
-        bottom: 82px;
+      .footer-nota-wrap {
+        gap: 8px;
       }
 
-      .hero::after {
-        background-size: 115vw;
-        background-position: 140% 8%;
-        opacity: 0.16;
+      .wsp-flotante span {
+        display: none;
       }
     }
   </style>
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <header class="topbar" aria-label="Navegación principal">
     <div class="contenedor topbar-inner">
-      <div class="marca">Violencia Invisible</div>
+      <div class="marca-bloque">
+        <div class="marca">Violencia Invisible</div>
+        <div class="marca-sub">Consultoría informativa</div>
+      </div>
+      <nav class="nav-superior" aria-label="Secciones principales">
+        <a href="#sobre">Enfoque</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencias">Testimonios</a>
+      </nav>
       <a class="boton boton-principal" href="https://wa.me/5492494284798" target="_blank" rel="noopener noreferrer" aria-label="Reservar consulta por WhatsApp" data-whatsapp-source="Header">
         Reservar consulta
       </a>
@@ -1026,52 +1611,68 @@
   <main>
     <section class="hero" id="inicio" aria-labelledby="titulo-principal">
       <div class="contenedor hero-grid">
-        <div class="entrada">
+        <div class="entrada hero-copy">
+          <div class="hero-etiquetas" aria-label="Puntos clave del servicio">
+            <span>Orientación clara</span>
+            <span>Reserva directa</span>
+            <span>Enfoque serio</span>
+          </div>
           <h1 id="titulo-principal">Violencia Invisible</h1>
-          <p class="slogan">Violencia sin género. Leyes claras. Pasos y voz para quienes no pueden gritar.</p>
-          <p class="intro">Muchas personas viven manipulación, presión psicológica o violencia invisible sin saber cómo nombrarlo ni cómo actuar. Esta consultoría te brinda claridad para entender tu situación antes de dar pasos legales.</p>
+          <p class="slogan">Entendé lo que vivís. Ordená tu caso. Actuá con más claridad.</p>
+          <p class="intro">Si estás atravesando manipulación, presión psicológica o violencia invisible, acá podés bajar la confusión a tierra: entender qué importa, qué conviene guardar y cómo dar el próximo paso con criterio.</p>
           <div class="acciones">
-            <a class="boton boton-principal" href="https://wa.me/5492494284798" target="_blank" rel="noopener noreferrer" data-whatsapp-source="Hero principal">Reservar consulta por WhatsApp</a>
-            <a class="boton boton-secundario" href="#servicios">Ver opciones de asesoramiento</a>
+            <a class="boton boton-principal" href="https://wa.me/5492494284798" target="_blank" rel="noopener noreferrer" data-whatsapp-source="Hero principal">Quiero reservar por WhatsApp</a>
+            <a class="boton boton-secundario" href="#servicios">Ver servicios disponibles</a>
+          </div>
+          <div class="hero-resumen" aria-label="Resumen del servicio">
+            <div>
+              <strong>Con qué salís</strong>
+              <span>Más claridad, prioridades definidas y una hoja de ruta concreta para avanzar.</span>
+            </div>
+            <div>
+              <strong>Cómo empieza</strong>
+              <span>Elegís el formato, contás tu situación y abrís WhatsApp con el mensaje listo para enviar.</span>
+            </div>
           </div>
         </div>
         <aside class="panel-hero entrada delay-1" aria-label="Beneficios de la asesoría">
+          <p class="panel-kicker">Qué recibís</p>
           <div class="fila-ico">
-            <div class="icono" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 2L20 5V11C20 16.52 16.73 20.74 12 22C7.27 20.74 4 16.52 4 11V5L12 2Z" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M9 11.7L11.2 14L15.2 10" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
+            <div class="icono" aria-hidden="true"><i class="fas fa-shield-heart"></i></div>
+            <div>
+              <strong>Enfoque serio y responsable</strong>
+              <span>Un espacio pensado para ordenar lo esencial con criterio y respeto.</span>
             </div>
-            Enfoque serio y responsable
           </div>
           <div class="fila-ico">
-            <div class="icono" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M12 7V12L15.2 14" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
+            <div class="icono" aria-hidden="true"><i class="fas fa-bullseye"></i></div>
+            <div>
+              <strong>Respuesta clara y concreta</strong>
+              <span>Información útil para entender tu situación y distinguir prioridades reales.</span>
             </div>
-            Respuesta clara y concreta
           </div>
           <div class="fila-ico">
-            <div class="icono" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M4 7H20M7 3V7M17 3V7" stroke="currentColor" stroke-width="1.8"/>
-                <rect x="4" y="7" width="16" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M8 12H12" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
+            <div class="icono" aria-hidden="true"><i class="fas fa-list-check"></i></div>
+            <div>
+              <strong>Plan de acción paso a paso</strong>
+              <span>Pruebas, decisiones y próximos movimientos explicados sin rodeos.</span>
             </div>
-            Plan de acción paso a paso
           </div>
+          <div class="panel-nota-hero">La reserva se inicia por WhatsApp para que el primer contacto ya llegue ordenado y con contexto.</div>
         </aside>
+      </div>
+      <div class="hero-scroll-wrap">
+        <a class="hero-scroll" id="hero-scroll" href="#sobre" aria-label="Bajar a la siguiente sección">
+          <span>Deslizar</span>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </a>
       </div>
     </section>
 
     <section id="sobre" class="fondo-gris" aria-labelledby="titulo-sobre">
       <div class="contenedor">
         <h2 id="titulo-sobre">Asesoramiento para ordenar, comprender y actuar</h2>
-        <p class="texto-seccion">La consulta está pensada para que puedas entender qué te está pasando, ordenar tu caso y avanzar con dirección. El objetivo es brindarte orientación informativa con criterio legal y lenguaje claro.</p>
+        <p class="texto-seccion">La propuesta está pensada para sacarte de la confusión y llevarte a una lectura más clara del caso. El foco no es abrumarte con teoría, sino ayudarte a entender tu situación y moverte con dirección.</p>
         <ul class="lista-check" aria-label="Objetivos de la consulta">
           <li>Entender tu situación con mayor claridad.</li>
           <li>Ordenar tu caso y diferenciar lo esencial de lo secundario.</li>
@@ -1118,30 +1719,68 @@
       </div>
     </section>
 
+    <section id="cultura-valores" class="fondo-gris" aria-labelledby="titulo-cultura-valores">
+      <div class="contenedor">
+        <div class="cultura-encabezado">
+          <p class="cultura-kicker">Cultura y Valores</p>
+          <h2 id="titulo-cultura-valores">Nuestra postura: justicia, verdad y claridad</h2>
+          <p class="texto-seccion">La violencia no tiene género. En un sistema legal y social que muchas veces opera con reflejos automáticos, nuestra cultura parte de tres pilares: visibilizar lo que no se ve, ordenar los hechos con rigor y defender que la protección debe basarse en la verdad del caso, no en etiquetas previas.</p>
+        </div>
+
+        <div class="cultura-grid" aria-label="Pilares culturales del proyecto">
+          <article class="valor-card" aria-labelledby="valor-silencio">
+            <div class="valor-icono" aria-hidden="true"><i class="fas fa-bullhorn"></i></div>
+            <h3 id="valor-silencio">Visibilizar lo inaudible</h3>
+            <p>Damos voz a quienes no pueden gritar. La violencia invisible, la manipulación y el desgaste psicológico suelen dejar pocas marcas externas y mucha confusión interna. Nuestro trabajo es transformar ese silencio en relato claro, ordenado y útil.</p>
+          </article>
+
+          <article class="valor-card destacado" aria-labelledby="valor-equidad">
+            <div class="valor-icono" aria-hidden="true"><i class="fas fa-scale-balanced"></i></div>
+            <h3 id="valor-equidad">Equidad frente a la ley</h3>
+            <p>Reconocemos una realidad incómoda: a veces los marcos de protección se aplican con sesgos, automatismos o lecturas incompletas de los hechos. Eso puede dejar a hombres en una posición de extrema vulnerabilidad aun cuando son quienes necesitan ser escuchados. Sostenemos que la protección y la respuesta legal deben apoyarse en pruebas, contexto y hechos concretos.</p>
+          </article>
+
+          <article class="valor-card" aria-labelledby="valor-responsabilidad">
+            <div class="valor-icono" aria-hidden="true"><i class="fas fa-shield-halved"></i></div>
+            <h3 id="valor-responsabilidad">Responsabilidad informativa</h3>
+            <p>No buscamos confrontar, sino equilibrar. Creemos en el derecho a una defensa justa y en la importancia de ordenar un caso con precisión técnica para evitar que una ley pensada para proteger termine produciendo injusticia cuando la verdad del caso apunta en otra dirección.</p>
+          </article>
+        </div>
+
+        <div class="manifiesto-destacado" aria-label="Manifiesto del proyecto">
+          <blockquote>
+            "Cuando una situación se juzga por reflejo y no por la verdad del caso, la justicia pierde equilibrio. Estamos para ayudarte a que tu voz llegue con orden, objetividad y fundamento."
+          </blockquote>
+          <p>Justicia real basada en hechos, no en presupuestos automáticos.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="servicios" aria-labelledby="titulo-servicios">
       <div class="contenedor">
         <h2 id="titulo-servicios">Opciones de asesoramiento</h2>
-        <p class="texto-seccion">Elegí el formato que mejor se adapte a tu momento. En todos los casos el foco está en la claridad, el orden y los pasos concretos para avanzar.</p>
+        <p class="texto-seccion">Elegí la modalidad que mejor encaje con tu momento. Todas están pensadas para darte claridad, orden y próximos pasos concretos desde el primer contacto.</p>
 
         <div class="tarjetas-servicios">
           <article class="tarjeta" aria-labelledby="servicio-guia">
             <h3 id="servicio-guia">Guía personalizada paso a paso</h3>
             <span class="etiqueta-precio">$30.000</span>
-            <p>Enviás un audio explicando tu situación y recibís el mismo día una guía escrita con lo importante del caso, las pruebas que conviene guardar, qué pedir y pasos concretos para avanzar.</p>
+            <p>Enviás un audio con tu situación y recibís una guía escrita con lo importante del caso, qué pruebas conviene guardar, qué pedir y cómo avanzar sin perder tiempo.</p>
             <p class="pago"><strong>Pago:</strong> 50% al iniciar y 50% al recibir la guía.</p>
             <div class="acciones-servicio">
-              <button class="boton boton-principal boton-acceder" type="button" data-servicio="Guía personalizada">Solicitar guía</button>
+              <button class="boton boton-principal boton-acceder" type="button" data-servicio="Guía personalizada">Quiero esta guía</button>
               <button class="boton boton-secundario boton-acceder" type="button" data-servicio="Guía personalizada">Acceder</button>
             </div>
           </article>
 
-          <article class="tarjeta" aria-labelledby="servicio-entrevista">
+          <article class="tarjeta tarjeta-destacada" aria-labelledby="servicio-entrevista">
             <h3 id="servicio-entrevista">Entrevista privada de 30 minutos</h3>
+            <span class="etiqueta-plan">Formato más elegido</span>
             <span class="etiqueta-precio">$50.000</span>
-            <p>Durante 30 minutos analizamos tu situación y definimos prioridades, primeros pasos legales, cómo presentar pedidos y un plan concreto para avanzar.</p>
+            <p>En 30 minutos ordenamos tu situación, definimos prioridades y bajamos a tierra los primeros pasos que hoy más te conviene dar.</p>
             <p class="pago"><strong>Pago:</strong> 50% para reservar y 50% al finalizar.</p>
             <div class="acciones-servicio">
-              <button class="boton boton-principal boton-acceder" type="button" data-servicio="Entrevista 1 a 1">Reservar entrevista</button>
+              <button class="boton boton-principal boton-acceder" type="button" data-servicio="Entrevista 1 a 1">Quiero esta entrevista</button>
               <button class="boton boton-secundario boton-acceder" type="button" data-servicio="Entrevista 1 a 1">Acceder</button>
             </div>
           </article>
@@ -1149,10 +1788,10 @@
           <article class="tarjeta" aria-labelledby="servicio-libro">
             <h3 id="servicio-libro">PDF + sesión 1 a 1</h3>
             <span class="etiqueta-precio">$70.000</span>
-            <p>Incluye el PDF con leyes, derechos, patrones de manipulación y tipos de violencia psicológica, más una sesión 1 a 1 para revisar tu caso y ordenar pasos concretos.</p>
+            <p>Incluye material digital con leyes, derechos y patrones de manipulación, más una sesión 1 a 1 para aplicar todo eso a tu caso real.</p>
             <p class="pago"><strong>Formato:</strong> material digital + encuentro personalizado.</p>
             <div class="acciones-servicio">
-              <button class="boton boton-principal boton-acceder" type="button" data-servicio="PDF + 1 a 1 conmigo">Comprar acceso</button>
+              <button class="boton boton-principal boton-acceder" type="button" data-servicio="PDF + 1 a 1 conmigo">Quiero este pack</button>
               <button class="boton boton-secundario boton-acceder" type="button" data-servicio="PDF + 1 a 1 conmigo">Acceder</button>
             </div>
           </article>
@@ -1166,37 +1805,19 @@
         <p class="texto-seccion">El acompañamiento está orientado a brindar herramientas para comprender tu escenario, ordenar decisiones y conocer mejor cómo funciona el sistema legal.</p>
         <div class="grilla-confianza">
           <div class="item-confianza">
-            <div class="icono" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3L4 7V12C4 17 7 20 12 21C17 20 20 17 20 12V7L12 3Z" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
-            </div>
+            <div class="icono" aria-hidden="true"><i class="fas fa-shield-heart"></i></div>
             <div>Enfoque serio y responsable ante situaciones sensibles.</div>
           </div>
           <div class="item-confianza">
-            <div class="icono" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M4 12H20M12 4V20" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
-            </div>
+            <div class="icono" aria-hidden="true"><i class="fas fa-bullseye"></i></div>
             <div>Claridad antes de tomar decisiones legales importantes.</div>
           </div>
           <div class="item-confianza">
-            <div class="icono" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M5 20C5 16.7 8.1 14 12 14C15.9 14 19 16.7 19 20" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
-            </div>
+            <div class="icono" aria-hidden="true"><i class="fas fa-people-group"></i></div>
             <div>Acompañamiento informativo para ordenar prioridades y pasos.</div>
           </div>
           <div class="item-confianza">
-            <div class="icono" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M4 5H20V19H4V5Z" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M8 9H16M8 13H16" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
-            </div>
+            <div class="icono" aria-hidden="true"><i class="fas fa-scale-balanced"></i></div>
             <div>Objetivo: brindar comprensión del sistema y herramientas concretas.</div>
           </div>
         </div>
@@ -1318,7 +1939,7 @@
     <section id="reserva" class="fondo-gris" aria-labelledby="titulo-reserva">
       <div class="contenedor">
         <h2 id="titulo-reserva">Orientación automática y reserva directa</h2>
-        <p class="texto-seccion">Usá el botón flotante de IA para resolver preguntas frecuentes en segundos. Si querés avanzar con una consulta, podés abrir el acceso de cada servicio o iniciar una reserva general.</p>
+        <p class="texto-seccion">Si todavía no sabés cuál formato te conviene, usá el botón de IA para resolver dudas rápidas. Cuando quieras avanzar, podés abrir una reserva general y enviar tu caso por WhatsApp.</p>
 
         <article class="panel-soporte" aria-labelledby="titulo-form-reserva">
           <h3 id="titulo-form-reserva">Reserva general</h3>
@@ -1333,8 +1954,8 @@
 
     <section class="cta-final" id="contacto" aria-labelledby="titulo-cta-final">
       <div class="contenedor entrada delay-2">
-        <h2 id="titulo-cta-final">No tenés que atravesar esto sin entender qué está pasando ni cómo actuar.</h2>
-        <p>Reservá tu espacio por WhatsApp y recibí orientación clara para dar los próximos pasos con mayor seguridad.</p>
+        <h2 id="titulo-cta-final">No sigas intentando resolver esto en medio de la confusión.</h2>
+        <p>Reservá por WhatsApp y empezá con una lectura clara de tu situación, tus prioridades y los próximos pasos que hoy más te convienen.</p>
         <a class="boton boton-principal" href="https://wa.me/5492494284798" target="_blank" rel="noopener noreferrer" data-whatsapp-source="CTA final">Hablar por WhatsApp ahora</a>
       </div>
     </section>
@@ -1342,31 +1963,47 @@
 
   <footer>
     <div class="contenedor">
-      <strong>Violencia Invisible</strong> | Consultoría informativa<br>
-      WhatsApp: 2494 28 4798
+      <div class="footer-inner">
+        <div class="footer-marca">
+          <strong>Violencia Invisible</strong>
+          <span>Consultoría informativa para ordenar situaciones complejas con más claridad.</span>
+        </div>
 
-      <div class="sociales" aria-label="Redes sociales">
-        <a class="social-link" href="https://www.instagram.com/violencia.invisible" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Violencia Invisible">
-          <svg class="social-ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.8"/>
-            <circle cx="12" cy="12" r="4.1" stroke="currentColor" stroke-width="1.8"/>
-            <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
-          </svg>
-          <span>
-            <span class="social-etiqueta">Instagram</span>
-            <span class="social-nota">@violencia.invisible</span>
-          </span>
-        </a>
+        <p class="footer-copy">Orientación pensada para ayudarte a entender mejor tu situación, reconocer prioridades y avanzar con un criterio más claro desde el primer contacto.</p>
 
-        <span class="social-pendiente" aria-label="Facebook pendiente de enlace">
-          <svg class="social-ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M13.4 20V12.9H15.8L16.2 10.2H13.4V8.5C13.4 7.7 13.7 7.1 14.9 7.1H16.3V4.7C15.6 4.6 14.8 4.5 14 4.5C11.6 4.5 10.1 6 10.1 8.7V10.2H7.8V12.9H10.1V20H13.4Z" fill="currentColor"/>
-          </svg>
-          <span>
-            <span class="social-etiqueta">Facebook</span>
-            <span class="social-nota">Enlace pendiente</span>
+        <div class="footer-contacto" aria-label="Canal principal de contacto">
+          <span>WhatsApp</span>
+          <strong>2494 28 4798</strong>
+        </div>
+
+        <div class="sociales" aria-label="Redes sociales">
+          <a class="social-link" href="https://www.instagram.com/violencia.invisible" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Violencia Invisible">
+            <svg class="social-ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4.1" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+            </svg>
+            <span>
+              <span class="social-etiqueta">Instagram</span>
+              <span class="social-nota">@violencia.invisible</span>
+            </span>
+          </a>
+
+          <span class="social-pendiente" aria-label="Facebook pendiente de enlace">
+            <svg class="social-ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M13.4 20V12.9H15.8L16.2 10.2H13.4V8.5C13.4 7.7 13.7 7.1 14.9 7.1H16.3V4.7C15.6 4.6 14.8 4.5 14 4.5C11.6 4.5 10.1 6 10.1 8.7V10.2H7.8V12.9H10.1V20H13.4Z" fill="currentColor"/>
+            </svg>
+            <span>
+              <span class="social-etiqueta">Facebook</span>
+              <span class="social-nota">Enlace pendiente</span>
+            </span>
           </span>
-        </span>
+        </div>
+
+        <div class="footer-nota-wrap">
+          <p class="footer-nota">La reserva y el primer intercambio se coordinan por WhatsApp para que tu consulta llegue con mejor contexto desde el inicio.</p>
+          <button class="boton-panel" type="button" id="abrir-panel-ceo" aria-haspopup="dialog" aria-controls="panel-ceo" aria-label="Abrir panel CEO" title="Panel CEO"></button>
+        </div>
       </div>
     </div>
   </footer>
@@ -1380,15 +2017,14 @@
   </a>
 
   <div class="ia-wrap" aria-label="Asistente de IA">
-    <div class="ia-pista">Preguntas frecuentes</div>
+    <div class="ia-pista">
+      <strong>IA rápida</strong>
+      <span>Preguntas frecuentes</span>
+    </div>
     <button class="boton ia-flotante" type="button" id="abrir-chat-ia" aria-haspopup="dialog" aria-controls="modal-chat-ia" aria-label="Abrir asistente de IA">
       IA
     </button>
   </div>
-
-  <button class="boton boton-panel" type="button" id="abrir-panel-ceo" aria-haspopup="dialog" aria-controls="panel-ceo" aria-label="Abrir panel CEO">
-    Panel CEO
-  </button>
 
   <div class="modal-flotante" id="modal-reserva" aria-hidden="true">
     <div class="modal-contenido" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-reserva">
@@ -1528,7 +2164,8 @@
     (function () {
       var CLAVE_PANEL = "1234";
       var STORAGE_KEY = "violenciaInvisibleAnalytics";
-      var whatsappLinks = document.querySelectorAll('a[href="https://wa.me/5492494284798"]');
+      var whatsappLinks = document.querySelectorAll("a[data-whatsapp-source]");
+      var topbar = document.querySelector(".topbar");
       var botonesAcceder = document.querySelectorAll(".boton-acceder");
       var abrirPanel = document.getElementById("abrir-panel-ceo");
       var cerrarPanel = document.getElementById("cerrar-panel-ceo");
@@ -1557,9 +2194,17 @@
       var testimoniosIndicadores = document.querySelectorAll("#testimonios-indicadores button");
       var formularioReserva = document.getElementById("form-reserva");
       var mensajeReserva = document.getElementById("mensaje-reserva");
+      var hero = document.getElementById("inicio");
+      var heroScroll = document.getElementById("hero-scroll");
+      var seccionSiguiente = document.getElementById("sobre");
+      var elementosFondo = [document.querySelector("header"), document.querySelector("main"), document.querySelector("footer"), document.querySelector(".wsp-flotante"), document.querySelector(".ia-wrap"), abrirPanel];
       var baseWhatsApp = "https://wa.me/5492494284798?text=";
+      var mensajeWhatsAppPredeterminado = "Hola vengo desde la web, quiero una entrevista !!";
       var indiceTestimonio = 0;
       var temporizadorTestimonios;
+      var disparadoresModal = new WeakMap();
+      var heroScrollEnCurso = false;
+      var heroAnimacionEnCurso = false;
       var respuestasFaq = {
         situacion: "Si vivís manipulación, presión constante, control, confusión o desgaste emocional, puede haber indicadores de violencia psicológica o invisible. La propuesta de Violencia Invisible es ayudarte a ordenar lo que pasa y entender qué elementos son relevantes antes de tomar decisiones legales.",
         pruebas: "Conviene guardar audios, mensajes, correos, capturas, fechas, pedidos realizados y cualquier registro que muestre patrones de manipulación o presión. La guía y la entrevista están pensadas justamente para identificar qué sirve y cómo conservarlo sin perjudicar tu posición.",
@@ -1667,6 +2312,54 @@
         guardarAnalytics(analytics);
       }
 
+      function construirUrlWhatsApp(mensaje) {
+        return baseWhatsApp + encodeURIComponent(mensaje || mensajeWhatsAppPredeterminado);
+      }
+
+      function actualizarEstadoScroll() {
+        var scrollTop = window.scrollY || window.pageYOffset;
+        var scrollTotal = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+        var progreso = Math.min(scrollTop / scrollTotal, 1);
+        var heroAltura = hero ? hero.offsetHeight : 1;
+        var heroProgreso = hero ? Math.min(scrollTop / Math.max(heroAltura * 0.9, 1), 1) : 0;
+
+        document.body.style.setProperty("--scroll-progress", String(progreso));
+        document.body.style.setProperty("--hero-parallax", Math.round(heroProgreso * 70) + "px");
+        document.body.style.setProperty("--hero-content-shift", Math.round(heroProgreso * -58) + "px");
+        document.body.style.setProperty("--hero-panel-shift", Math.round(heroProgreso * -34) + "px");
+        document.body.style.setProperty("--hero-content-opacity", String(1 - heroProgreso * 0.72));
+        document.body.style.setProperty("--hero-panel-opacity", String(1 - heroProgreso * 0.58));
+        document.body.style.setProperty("--hero-overlay-opacity", String(Math.max(0.03, 0.06 - heroProgreso * 0.03)));
+        document.body.style.setProperty("--hero-scale", String(1 - heroProgreso * 0.018));
+
+        if (topbar) {
+          topbar.classList.toggle("compact", scrollTop > 24);
+        }
+
+        heroAnimacionEnCurso = false;
+      }
+
+      function solicitarActualizacionScroll() {
+        if (heroAnimacionEnCurso) {
+          return;
+        }
+
+        heroAnimacionEnCurso = true;
+        window.requestAnimationFrame(actualizarEstadoScroll);
+      }
+
+      function bajarDesdeHero() {
+        if (!hero || !seccionSiguiente || heroScrollEnCurso) {
+          return;
+        }
+
+        heroScrollEnCurso = true;
+        seccionSiguiente.scrollIntoView({ behavior: "smooth", block: "start" });
+        window.setTimeout(function () {
+          heroScrollEnCurso = false;
+        }, 900);
+      }
+
       function agregarBurbuja(texto, clase) {
         var nodo = document.createElement("div");
         nodo.className = "burbuja " + clase;
@@ -1708,28 +2401,96 @@
         }, 2000);
       }
 
-      function abrirModal(modal) {
+      function obtenerElementosEnfocables(contenedor) {
+        return Array.prototype.slice.call(contenedor.querySelectorAll('a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])')).filter(function (elemento) {
+          return !elemento.hidden && elemento.offsetParent !== null;
+        });
+      }
+
+      function alternarFondoBloqueado(estado) {
+        document.body.classList.toggle("overlay-activo", estado);
+        elementosFondo.forEach(function (elemento) {
+          if (!elemento) {
+            return;
+          }
+
+          elemento.inert = estado;
+        });
+      }
+
+      function obtenerOverlayVisible() {
+        if (panel.classList.contains("visible")) {
+          return panel;
+        }
+
+        if (modalChatIA.classList.contains("visible")) {
+          return modalChatIA;
+        }
+
+        if (modalReserva.classList.contains("visible")) {
+          return modalReserva;
+        }
+
+        return null;
+      }
+
+      function enfocarPrimerElemento(modal, selectorPreferido) {
+        var objetivo = selectorPreferido ? modal.querySelector(selectorPreferido) : null;
+        var enfocables = obtenerElementosEnfocables(modal);
+
+        if (objetivo) {
+          objetivo.focus();
+          return;
+        }
+
+        if (enfocables[0]) {
+          enfocables[0].focus();
+        }
+      }
+
+      function abrirModal(modal, disparador, selectorFoco) {
+        disparadoresModal.set(modal, disparador || document.activeElement || null);
         modal.classList.add("visible");
         modal.setAttribute("aria-hidden", "false");
+        alternarFondoBloqueado(true);
+        window.setTimeout(function () {
+          enfocarPrimerElemento(modal, selectorFoco);
+        }, 40);
       }
 
       function cerrarModal(modal) {
+        var activo = document.activeElement;
+        var disparador = disparadoresModal.get(modal);
+
+        if (activo && modal.contains(activo) && typeof activo.blur === "function") {
+          activo.blur();
+        }
+
         modal.classList.remove("visible");
         modal.setAttribute("aria-hidden", "true");
+
+        if (!obtenerOverlayVisible()) {
+          alternarFondoBloqueado(false);
+        }
+
+        if (disparador && typeof disparador.focus === "function") {
+          window.setTimeout(function () {
+            disparador.focus();
+          }, 20);
+        }
       }
 
       function abrirDialogo() {
-        abrirModal(panel);
+        abrirPanel.setAttribute("aria-expanded", "true");
+        abrirModal(panel, abrirPanel, "#clave-ceo");
         mensajeAcceso.textContent = "";
         campoClave.value = "";
         contenidoAnalytics.hidden = true;
         formularioAcceso.hidden = false;
-        window.setTimeout(function () {
-          campoClave.focus();
-        }, 40);
       }
 
       function cerrarDialogo() {
+        abrirPanel.setAttribute("aria-expanded", "false");
         cerrarModal(panel);
       }
 
@@ -1741,21 +2502,68 @@
           ? "Completá tus datos para acceder a " + servicio + " y enviá la solicitud por WhatsApp."
           : "Completá tus datos y enviá la solicitud por WhatsApp.";
         mensajeReserva.textContent = "";
-        abrirModal(modalReserva);
-        window.setTimeout(function () {
-          document.getElementById("nombre-apellido").focus();
-        }, 40);
+        abrirModal(modalReserva, document.activeElement, "#nombre-apellido");
       }
 
       registrarVista();
       irATestimonio(0);
       iniciarCarruselTestimonios();
+      actualizarEstadoScroll();
+
+      whatsappLinks.forEach(function (link) {
+        link.href = construirUrlWhatsApp(mensajeWhatsAppPredeterminado);
+      });
 
       whatsappLinks.forEach(function (link) {
         link.addEventListener("click", function () {
           registrarClickWhatsApp(link.dataset.whatsappSource || link.getAttribute("aria-label") || "WhatsApp");
         });
       });
+
+      if (hero && seccionSiguiente && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        hero.addEventListener("wheel", function (evento) {
+          var heroVisible = window.scrollY <= hero.offsetTop + 24;
+
+          if (heroVisible && evento.deltaY > 18) {
+            evento.preventDefault();
+            bajarDesdeHero();
+          }
+        }, { passive: false });
+      }
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        window.addEventListener("scroll", solicitarActualizacionScroll, { passive: true });
+
+        if ("IntersectionObserver" in window) {
+          var revealObserver = new IntersectionObserver(function (entradas) {
+            entradas.forEach(function (entrada) {
+              if (entrada.isIntersecting) {
+                entrada.target.classList.add("visible");
+                revealObserver.unobserve(entrada.target);
+              }
+            });
+          }, {
+            threshold: 0.16,
+            rootMargin: "0px 0px -10% 0px"
+          });
+
+          Array.prototype.slice.call(document.querySelectorAll("main > section:not(.hero)")).forEach(function (section) {
+            section.classList.add("scroll-reveal");
+            revealObserver.observe(section);
+          });
+        }
+      } else {
+        Array.prototype.slice.call(document.querySelectorAll("main > section:not(.hero)")).forEach(function (section) {
+          section.classList.add("visible");
+        });
+      }
+
+      if (heroScroll) {
+        heroScroll.addEventListener("click", function (evento) {
+          evento.preventDefault();
+          bajarDesdeHero();
+        });
+      }
 
       testimoniosIndicadores.forEach(function (boton, indice) {
         boton.addEventListener("click", function () {
@@ -1784,7 +2592,7 @@
       abrirPanel.addEventListener("click", abrirDialogo);
       cerrarPanel.addEventListener("click", cerrarDialogo);
       abrirChatIA.addEventListener("click", function () {
-        abrirModal(modalChatIA);
+        abrirModal(modalChatIA, abrirChatIA, ".faq-boton");
       });
       cerrarChatIA.addEventListener("click", function () {
         cerrarModal(modalChatIA);
@@ -1812,6 +2620,27 @@
       });
 
       document.addEventListener("keydown", function (evento) {
+        var overlayVisible = obtenerOverlayVisible();
+
+        if (evento.key === "Tab" && overlayVisible) {
+          var enfocables = obtenerElementosEnfocables(overlayVisible);
+          var primerElemento = enfocables[0];
+          var ultimoElemento = enfocables[enfocables.length - 1];
+
+          if (enfocables.length === 0) {
+            evento.preventDefault();
+            return;
+          }
+
+          if (evento.shiftKey && document.activeElement === primerElemento) {
+            evento.preventDefault();
+            ultimoElemento.focus();
+          } else if (!evento.shiftKey && document.activeElement === ultimoElemento) {
+            evento.preventDefault();
+            primerElemento.focus();
+          }
+        }
+
         if (evento.key === "Escape" && panel.classList.contains("visible")) {
           cerrarDialogo();
         }
@@ -1887,7 +2716,7 @@
         mensajeReserva.textContent = "";
 
         var mensaje = [
-          "Hola, quiero reservar una consulta en Violencia Invisible.",
+          "Hola Quiero una entrevista,",
           "",
           "Nombre y apellido: " + nombre,
           "Email: " + email,
@@ -1897,7 +2726,7 @@
         ].join("\n");
 
         registrarClickWhatsApp("Formulario reserva");
-        window.open(baseWhatsApp + encodeURIComponent(mensaje), "_blank", "noopener,noreferrer");
+        window.open(construirUrlWhatsApp(mensaje), "_blank", "noopener,noreferrer");
         cerrarModal(modalReserva);
       });
     })();
